@@ -28,12 +28,12 @@ export class Home extends Component{
     render() {
         const{results, usedSearch}=this.state
         var classes = ''
-        if (results.length === 0) {classes = 'ContainerHome'}
-        if (results.length > 0) {classes = 'ContainerResults'}
+        if (results.length === 0 && !usedSearch) {classes = 'ContainerHome'}
+        else {classes = 'ContainerResults'}
         return (
             <div className= {classes}>
                 <Title>Plant Finder</Title>
-                <h4 class="subtitle is-6 is-italic has-text-weight-light">Francisco G. Gonzálvez</h4>
+                <h4 className="subtitle is-6 is-italic has-text-weight-light">Francisco G. Gonzálvez</h4>
                     <div className='SearchForm-Wrapper'>
                     <SearchForm onResults={this._handleResults}/>
                     </div>

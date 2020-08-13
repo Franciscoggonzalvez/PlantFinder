@@ -12,7 +12,7 @@ export class PlantList extends Component{
         const {plants} = this.props
         return (
             <div>
-            <h4 class="subtitle is-6 mt-2">Find more information by clicking on the image</h4>
+            <h4 className="subtitle is-6 mt-2">Find more information by clicking on the image</h4>
             {plants.length === 1
             ? <div className = 'SinglePlant'>
                         <div key={plants[0].id} className='PlantList-item'>

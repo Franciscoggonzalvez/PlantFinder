@@ -60,7 +60,7 @@ export class SearchForm extends Component {
     _handleSubmit = (e) =>{
         e.preventDefault()
 
-        const {inputPlant, page, radioValue, totalPlants} = this.state
+        const {inputPlant, page, radioValue} = this.state
         const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
         if(radioValue ==='') { return}
@@ -73,8 +73,11 @@ export class SearchForm extends Component {
             const {data = [], meta = 0} = results
             this.props.onResults(data)
             this.setState({totalPlants: meta.total})
-            if (totalPlants > 0) {
+            if (meta.total > 0) {
                 this.setState( {showButtons: true})
+            }
+            else{
+                this.setState({showButtons: false})
             }
             this._handlePages()          
         })     
@@ -92,8 +95,8 @@ export class SearchForm extends Component {
             <div className='ContainerSearchForm'>
                 <div className='InformacionHome' >
                  {radioValue===''
-                ? <h4 class="subtitle is-4 has-text-info">Please, check an option</h4>
-                : <h4 class="subtitle is-4 has-text-info">Please, write your search</h4>
+                ? <h4 className="subtitle is-4 has-text-info">Please, check an option</h4>
+                : <h4 className="subtitle is-4 has-text-info">Please, write your search</h4>
                     }
                 </div>
                 <div className='RadioButtons'>
