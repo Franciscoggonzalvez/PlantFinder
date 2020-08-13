@@ -28,7 +28,7 @@ export class Home extends Component{
     render() {
         const{results, usedSearch}=this.state
         var classes = ''
-        if (results.length === 0 && !usedSearch) {classes = 'ContainerHome'}
+        if (results.length === 0 || !usedSearch) {classes = 'ContainerHome'}
         else {classes = 'ContainerResults'}
         return (
             <div className= {classes}>
