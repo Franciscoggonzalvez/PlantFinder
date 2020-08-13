@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7d7390694f567379f20cc55ddeff36e2",
+    "revision": "52e4d88ec3dba3c15ae201d761cac045",
     "url": "/plant-finder/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/plant-finder/static/css/2.0c0672e5.chunk.css"
   },
   {
-    "revision": "f9a1d0fc1e3b8d783b75",
+    "revision": "351e3c0a57f6b276824a",
     "url": "/plant-finder/static/css/main.e86c3976.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/plant-finder/static/js/2.6cc64ad7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f9a1d0fc1e3b8d783b75",
-    "url": "/plant-finder/static/js/main.40c82067.chunk.js"
+    "revision": "351e3c0a57f6b276824a",
+    "url": "/plant-finder/static/js/main.5af03c1d.chunk.js"
   },
   {
     "revision": "763c9977889e93d7cbc5",
